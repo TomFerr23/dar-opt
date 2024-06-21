@@ -165,7 +165,7 @@ body {
 
     .special {
         margin: 8px 0;
-        text-decoration: underline;
+        font-weight: 700;
     }
 }
 
