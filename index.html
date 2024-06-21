@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon - dar</title>
+    <link rel="stylesheet" href="styles_palette_two.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gilroy:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="assets/logo.svg" alt="dar logo">
+        </div>
+        <div class="slogan">
+            <span class="slogan-part light">Duurzaam</span> . 
+            <span class="slogan-part light">Alternatief</span> . 
+            <span class="slogan-part light">Rentemijdend</span> 
+        </div>
+        
+        <div class="sub-slogan">
+            Binnenkort meer over <span class="special">De Deelhypotheek</span>
+        </div>
+        <div id="lottie-button" class="lottie-button">
+            <dotlottie-player src="https://lottie.host/b01fcd47-0e70-4144-8934-c2061bbcf935/ThVWYMMHQU.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+        </div>
+        <div class="video-container">
+            <video id="intro-video" width="560" height="315" controls>
+                <source src="assets/intro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button id="close-video" class="close-video">X</button>
+        </div>
+        <div id="loading-animation" class="loading-animation"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
