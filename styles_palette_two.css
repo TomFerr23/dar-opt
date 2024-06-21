@@ -57,6 +57,9 @@ body {
     opacity: 0;
     animation: fadeInUp 1s forwards;
     animation-delay: 1.5s;
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .slogan-part.light {
@@ -122,6 +125,10 @@ body {
     animation: spin 2s linear infinite;
 }
 
+.special {
+    text-decoration: underline;
+}
+
 @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
     100% { -webkit-transform: rotate(360deg); }
@@ -130,5 +137,35 @@ body {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 600px) {
+    .logo {
+        margin-top: 40px; /* Adjust to move logo down */
+    }
+
+    .slogan {
+        font-size: 1em; /* Adjust font size for smaller screens */
+        margin-top: 20px; /* Adjust to move slogan down */
+    }
+
+    .sub-slogan {
+        font-size: 1em;
+        margin: 40px 0; /* Adjust margin for smaller screens */
+        white-space: normal;
+    }
+
+    .sub-slogan .special {
+        display: block; /* Move "De Deelhypotheek" to a new line */
+    }
+
+    .lottie-button {
+        margin: -40px auto; /* Adjust margin for smaller screens */
+    }
+
+    .special {
+        margin: 8px 0;
+        text-decoration: underline;
+    }
 }
 
